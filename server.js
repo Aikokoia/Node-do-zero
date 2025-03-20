@@ -72,7 +72,7 @@ server.delete("/videos/:id", async (request,reply) => {
 })
 
 server.listen({
-    port: 3333,
+    port: process.env.PORT ?? 3333,
 })
 
 //CRUD é create read update delete o que são todas as operações basicas em uma entidade no nosso codigo
